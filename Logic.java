@@ -44,6 +44,7 @@ public class Logic
         // Get the list of offices.
         final Office[] office =
             list.getOffices();
+            // what is this
 
         Neighborhood.print(house, "Houses", System.out);
         System.out.println("");
