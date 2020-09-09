@@ -46,9 +46,9 @@ public class Logic
             list.getOffices();
             // what is this
 
-        Neighborhood.print(house, "Houses", System.out);
+        Neighborhood.print(house, "Houses");
         System.out.println("");
-        Neighborhood.print(office, "Offices", System.out);
+        Neighborhood.print(office, "Offices");
 
         System.out.println("");
         System.out.println("Total neighborhood area: " +

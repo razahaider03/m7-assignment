@@ -1,5 +1,5 @@
 import java.io.FileNotFoundException;
-
+import java.io.PrintStream;
 
 
 /**
@@ -9,14 +9,22 @@ import java.io.FileNotFoundException;
  * constructor, as per https://en.wikipedia.org/wiki/Utility_class.
  */
 public final class Neighborhood {
-    public static
-    String calcArea ( House[] house ) {
-    }
 
-    public static
-    String calcArea ( Office[] office ) {
-    }
 
     // TODO - Put your code here.
-    
+    public static
+    void print ( Building[] buildings, String header ) {
+        for ( Building build : buildings ){
+            System.out.println(build.toString());
+        }
+        System.out.println(header);
+    }
+    public static
+    int calcArea (Building[] buildings ) {
+        int totalBuild = 0;
+        for ( Building build : buildings ){
+            totalBuild += build.calcLotArea();
+        }
+        return totalBuild;
+    }
 }

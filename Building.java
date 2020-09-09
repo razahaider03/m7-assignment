@@ -7,17 +7,17 @@ public class Building {
   private int mLotLength;
   private int mLotWidth;
 
-  private building(int length, int width, int lotlength, int lotwidth) {
-    this.length = mLength;
-    this.width = mWidth;
-    this.lotlength = mLotLength;
-    this.lotwidth = mLotWidth;
+
+  public Building(int length, int width, int lotLength, int lotWidth) {
+    this.mLength = length;
+    this.mWidth = width;
+    this.mLotLength = lotLength;
+    this.mLotWidth = lotWidth;
   }
 
   public int getLength() {
     return this.mLength;
   }
-
   public int getWidth() {
     return this.mWidth;
   }
@@ -27,25 +27,25 @@ public class Building {
   public int getLotWidth(){
     return this.mLotWidth;
   }
-  public void setLength(int){
-    
+
+  public void setLength(int length){
   }
-  public void setWidth(int){
-    
+  public void setWidth(int width){
+    mWidth = width;
   }
-  public void setLotLength(int){
-    
+  public void setLotLength(int lotLength){
+    mLotLength = lotLength;
   }
-  public void setLotWidth(int){
-    
+  public void setLotWidth(int lotWidth){
+    mLotWidth = lotWidth;
   }
   public int calcBuildingArea(){
-    
+    return mLength * mWidth;
   }
   public int calcLotArea(){
-    
+    return mLotLength * mLotWidth;
   }
   public String toString(){
-    
+    return  "building Area is " + calcBuildingArea();
   }
 }
