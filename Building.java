@@ -1,3 +1,5 @@
+package src;
+
 /** This is the Building class file. */
 public class Building {
 
@@ -6,7 +8,6 @@ public class Building {
   private int mWidth;
   private int mLotLength;
   private int mLotWidth;
-
 
   public Building(int length, int width, int lotLength, int lotWidth) {
     this.mLength = length;
@@ -18,34 +19,42 @@ public class Building {
   public int getLength() {
     return this.mLength;
   }
+
   public int getWidth() {
     return this.mWidth;
   }
-  public int getLotLength(){
+
+  public int getLotLength() {
     return this.mLotLength;
   }
-  public int getLotWidth(){
+
+  public int getLotWidth() {
     return this.mLotWidth;
   }
 
-  public void setLength(int length){
-  }
-  public void setWidth(int width){
+  public void setLength(int length) {}
+
+  public void setWidth(int width) {
     mWidth = width;
   }
-  public void setLotLength(int lotLength){
+
+  public void setLotLength(int lotLength) {
     mLotLength = lotLength;
   }
-  public void setLotWidth(int lotWidth){
+
+  public void setLotWidth(int lotWidth) {
     mLotWidth = lotWidth;
   }
-  public int calcBuildingArea(){
+
+  public int calcBuildingArea() {
     return mLength * mWidth;
   }
-  public int calcLotArea(){
+
+  public int calcLotArea() {
     return mLotLength * mLotWidth;
   }
-  public String toString(){
-    return  "building Area is " + calcBuildingArea();
+
+  public String toString() {
+    return "building Area is " + calcBuildingArea();
   }
 }

@@ -1,10 +1,9 @@
-public
-class Main {
+package src;
 
-    public static
-    void main ( String[] args ) {
-      Logic process = new Logic();
-      process.process();
-    }
+public class Main {
+
+  public static void main(String[] args) {
+    Logic process = new Logic();
+    process.process();
+  }
 }
-

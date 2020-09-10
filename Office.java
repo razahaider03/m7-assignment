@@ -1,55 +1,54 @@
-/**
- * This is the office class file, it is a subclass of Building.
- */
-public class Office 
-       extends Building {
-       
-    // TODO - Put your code here.
-    private String mBusinessName;
-    private int mParkingSpaces;
-    private static int sTotalOffices = 0;
-    public Office(int length, int width, int lotLength, int lotWidth ){
-        super(length,width,lotLength,lotWidth);
-        sTotalOffices++;
-    }
-    public Office(int length, int width, int lotLength, int lotWidth, String businessName ){
-        super(length,width,lotLength,lotWidth);
-        this.mBusinessName = businessName;
-        sTotalOffices++;
+package src;
+/** This is the office class file, it is a subclass of Building. */
+public class Office extends Building {
 
-    }
-    public Office(int length, int width, int lotLength, int lotWidth, String businessName, int parkingSpaces ){
-        super(length,width,lotLength,lotWidth);
-        this.mBusinessName = businessName;
-        this.mParkingSpaces = parkingSpaces;
-        sTotalOffices++;
-    }
-    public String getBusinessName(){
-        return mBusinessName;
-    }
+  // TODO - Put your code here.
+  private String mBusinessName;
+  private int mParkingSpaces;
+  private static int sTotalOffices = 0;
 
-    public
-    int getParkingSpaces () {
-        return mParkingSpaces;
-    }
-    public void setBusinessName(String businessName){
-        this.mBusinessName = businessName;
-    }
+  public Office(int length, int width, int lotLength, int lotWidth) {
+    super(length, width, lotLength, lotWidth);
+    sTotalOffices++;
+  }
 
-    public
-    void setParkingSpaces ( int parkingSpaces ) {
-        this.mParkingSpaces=parkingSpaces;
-    }
+  public Office(int length, int width, int lotLength, int lotWidth, String businessName) {
+    super(length, width, lotLength, lotWidth);
+    this.mBusinessName = businessName;
+    sTotalOffices++;
+  }
 
-    @Override
-    public
-    String toString () {
-        return super.toString();
-    }
+  public Office(
+      int length, int width, int lotLength, int lotWidth, String businessName, int parkingSpaces) {
+    super(length, width, lotLength, lotWidth);
+    this.mBusinessName = businessName;
+    this.mParkingSpaces = parkingSpaces;
+    sTotalOffices++;
+  }
 
-    @Override
-    public
-    boolean equals ( Object obj ) {
-        return super.equals(obj);
-    }
+  public String getBusinessName() {
+    return mBusinessName;
+  }
+
+  public int getParkingSpaces() {
+    return mParkingSpaces;
+  }
+
+  public void setBusinessName(String businessName) {
+    this.mBusinessName = businessName;
+  }
+
+  public void setParkingSpaces(int parkingSpaces) {
+    this.mParkingSpaces = parkingSpaces;
+  }
+
+  @Override
+  public String toString() {
+    return super.toString();
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    return super.equals(obj);
+  }
 }
