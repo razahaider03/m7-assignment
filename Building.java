@@ -32,7 +32,9 @@ public class Building {
     return this.mLotWidth;
   }
 
-  public void setLength(int length) {}
+  public void setLength(int length) {
+    mLength = length;
+  }
 
   public void setWidth(int width) {
     mWidth = width;
@@ -55,6 +57,6 @@ public class Building {
   }
 
   public String toString() {
-    return "building Area is " + calcBuildingArea();
+    return "Owner: " + "n/a";
   }
 }

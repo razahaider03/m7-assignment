@@ -16,10 +16,12 @@ public final class Neighborhood {
     // TODO - Put your code here.
     public static
     void print ( Building[] buildings, String header ) {
+    System.out.println(header);
+    System.out.println("--------------");
         for ( Building build : buildings ){
             System.out.println(build.toString());
         }
-        System.out.println(header);
+        
     }
     public static
     int calcArea (Building[] buildings ) {

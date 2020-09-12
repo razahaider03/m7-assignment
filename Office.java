@@ -44,7 +44,14 @@ public class Office extends Building {
 
   @Override
   public String toString() {
-    return super.toString();
+    return "Business: "
+        + (mBusinessName != null ? getBusinessName() : "unoccupied; ")
+        + (mParkingSpaces != 0 ? " has " : "")
+        + (mParkingSpaces != 0 ? mParkingSpaces : "")
+        + (mParkingSpaces != 0 ? " Parking Spaces" : "")
+        + " (total offices:"
+        + sTotalOffices
+        + ")";
   }
 
   @Override

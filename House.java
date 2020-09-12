@@ -37,8 +37,9 @@ public class House extends Building {
     this.mPool = bool;
   }
 
+  @Override
   public String toString() {
-    return "house has big space " + super.calcBuildingArea();
+    return "Owner: " + (getOwner()!=null? getOwner():"n/a") +(hasPool()?"; has a pool":"") + ((calcBuildingArea()<calcLotArea())&&(getOwner()!=null)?"; has a big open space":"");
   }
 
   public boolean equals(Object obj) {
